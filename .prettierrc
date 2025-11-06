@@ -1,0 +1,17 @@
+{
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "tabWidth": 2,
+  "printWidth": 80,
+  "singleQuote": true,
+  "semi": true,
+  "useTabs": false,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": "*.{ts,tsx}"
+    }
+  ],
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindStylesheet": "./src/index.css"
+}
