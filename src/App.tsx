@@ -1,4 +1,3 @@
-import './App.css';
 import ContactInfo from './components/ContactInfo';
 import Section from './components/Section';
 import ServiceList from './components/ServiceList';
