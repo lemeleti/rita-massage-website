@@ -14,3 +14,22 @@
     font-weight: 700;
   }
 }
+
+@theme {
+  --color-primary: #e7cee3;
+  --color-secondary: #e0e1e9;
+  --color-accent: #ddfdfe;
+}
+
+@layer utilities {
+  /* Gradients between main colors */
+  .bg-gradient-primary-secondary {
+    @apply bg-gradient-to-b from-primary to-secondary;
+  }
+  .bg-gradient-secondary-accent {
+    @apply bg-gradient-to-b from-secondary to-accent;
+  }
+  .bg-gradient-accent-secondary {
+    @apply bg-gradient-to-b from-accent to-secondary;
+  }
+}
