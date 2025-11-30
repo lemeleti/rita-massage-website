@@ -35,8 +35,8 @@ function App() {
           <div className="mx-auto mt-4 w-full md:w-3/4 xl:w-1/2">
             <ServiceList
               services={[
-                { name: 'Biqini', price: '30 CHF' },
-                { name: 'Axila', price: '45 CHF' },
+                { name: 'Biqini', price: '45 CHF' },
+                { name: 'Axila', price: '30 CHF' },
                 { name: 'Perna', price: '45 CHF' },
                 { name: 'Rosto', price: '20 CHF' },
               ]}
