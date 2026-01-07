@@ -1,35 +1,47 @@
 @import 'tailwindcss';
 
+@font-face {
+    font-family: 'Frontis';
+    src: local('Frontis DemiBold'), local('Frontis-DemiBold'),
+        url('./assets/fonts/Frontis-DemiBold.woff2') format('woff2'),
+        url('./assets/fonts/Frontis-DemiBold.woff') format('woff'),
+        url('./assets/fonts/Frontis-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
 @layer base {
   h1 {
-    font-size: var(--text-2xl);
+    font-size: var(--text-8xl);
     font-weight: 700;
+    font-family: 'Frontis';
+    color: var(--color-accent);
   }
   h2 {
-    font-size: var(--text-xl);
+    font-size: var(--text-5xl);
     font-weight: 700;
+    font-family: 'Frontis';
+    color: var(--color-accent);
   }
   h3 {
-    font-size: var(--text-lg);
+    font-size: var(--text-5xl);
     font-weight: 700;
+    font-family: 'Frontis';
+    color: var(--color-accent);
+  }
+  .frontis-font {
+    font-family: 'Frontis';
+  }
+  .frontis-font-label span:nth-child(1) {
+    font-family: 'Frontis';
+  }
+  span {
+    font-size: var(--text-xl);
   }
 }
 
 @theme {
-  --color-primary: #e7cee3;
-  --color-secondary: #e0e1e9;
-  --color-accent: #ddfdfe;
+  --color-primary: #f5d2d0;
+  --color-accent: #745648;
 }
 
-@layer utilities {
-  /* Gradients between main colors */
-  .bg-gradient-primary-secondary {
-    @apply bg-gradient-to-b from-primary to-secondary;
-  }
-  .bg-gradient-secondary-accent {
-    @apply bg-gradient-to-b from-secondary to-accent;
-  }
-  .bg-gradient-accent-secondary {
-    @apply bg-gradient-to-b from-accent to-secondary;
-  }
-}

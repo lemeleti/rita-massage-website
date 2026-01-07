@@ -14,7 +14,7 @@ export default function Section({
   return (
     <section className={`flex w-full flex-col pt-20 pb-20 ${className}`}>
       <div className="mx-auto flex w-3/5 flex-col items-center justify-center text-center">
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         {children}
       </div>
     </section>

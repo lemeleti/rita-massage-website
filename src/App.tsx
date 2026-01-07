@@ -2,18 +2,26 @@ import ContactInfo from './components/ContactInfo';
 import Section from './components/Section';
 import ServiceList from './components/ServiceList';
 
+import ribbonImage from './assets/ribbon-removebg-preview.png';
+
 function App() {
   return (
     <>
-      <header className="flex flex-col h-[45vh] items-center justify-center bg-primary">
+      <header className="flex flex-col pt-24 items-center justify-center bg-primary frontis-font">
+        
         <h1>RB</h1>
         <h2 className="uppercase">Toque de Beleca</h2>
+        <div className='flex flex-row mt-8'>
+          <img src={ribbonImage} />
+          <img src={ribbonImage} className='hidden lg:block'/>
+          <img src={ribbonImage} className='hidden xl:block'/>
+        </div>
       </header>
       <main className="flex flex-col">
 
         <Section
           title="Serviços"
-          className="bg-gradient-primary-secondary"
+          className="bg-primary frontis-font"
         >
           <div className="mx-auto mt-4 w-full md:w-3/4 xl:w-1/2">
             <ServiceList
@@ -30,7 +38,7 @@ function App() {
 
         <Section
           title="Depilaçào"
-          className="bg-gradient-secondary-accent"
+          className="bg-primary frontis-font"
         >
           <div className="mx-auto mt-4 w-full md:w-3/4 xl:w-1/2">
             <ServiceList
@@ -46,9 +54,9 @@ function App() {
 
         <Section
           title="Kontakt"
-          className="bg-accent"
+          className="bg-primary"
         >
-          <div className="mx-auto mt-4 w-full md:w-3/4 xl:w-1/2">
+          <div className="mx-auto mt-4 w-full md:w-3/4 xl:w-1/2 frontis-font-label">
             <ContactInfo
               email="meleti.rita@gmail.com"
               phone="+41 76 520 24 18"
