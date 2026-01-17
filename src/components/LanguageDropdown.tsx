@@ -15,8 +15,11 @@ const LANGUAGES: Language[] = [
 ];
 
 export default function LanguageDropdown({ onChange }: Props) {
+  const storedLanguage = localStorage.getItem('lang') ||'pt'
   const [open, setOpen] = useState(false);
-  const [current, setCurrent] = useState<Language>(LANGUAGES[0]);
+  const [current, setCurrent] = useState<Language>(
+    LANGUAGES.find((lang) => lang.code === storedLanguage) ?? LANGUAGES[0]
+  );
 
   function selectLanguage(lang: Language) {
     setCurrent(lang);
