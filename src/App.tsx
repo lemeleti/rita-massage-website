@@ -31,6 +31,10 @@ function App() {
                 { name: 'Manicure', price: '45 CHF' },
                 { name: 'Unha em Gel', price: '50 CHF' },
                 { name: 'Bambu Terapia', price: '80 CHF' },
+                { name: 'Design de Sobrancelha', price: '60 CHF' },
+                { name: 'Lifting de Sobrancelha', price: '70 CHF' },
+                { name: 'Lifting de Cilios', price: '80 CHF' },
+                { name: 'Lifting de Extensão de Cilios (fio a fio)', price: '90 CHF' },
               ]}
             />
           </div>
