@@ -17,7 +17,7 @@ function App() {
           i18n.changeLanguage(lang)
         }}></LanguageDropdown>
         <h1>{t('headerTitle')}</h1>
-        <h2 className="uppercase">{t('headerSubtitle')}</h2>
+        <h2 className="uppercase text-center">{t('headerSubtitle')}</h2>
         <div className='flex flex-row mt-8'>
           <img src={ribbonImage} />
           <img src={ribbonImage} className='hidden lg:block'/>
