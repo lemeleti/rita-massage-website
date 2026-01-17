@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import LabelValue from './LableValue';
 
 type ContactInfoProps = {
@@ -11,11 +12,12 @@ export default function ContactInfo({
   phone,
   address,
 }: ContactInfoProps) {
+  const { t } = useTranslation()
   return (
     <>
       {email && (
         <LabelValue
-          label="Email:"
+          label={t('contactEmailLabel') + ':'}
           value={
             <a href={`mailto:${email}`} className="underline">
               {email}
@@ -26,7 +28,7 @@ export default function ContactInfo({
       )}
       {phone && (
         <LabelValue
-          label="Telefon:"
+          label={t('contactPhoneLabel') + ':'}
           value={
             <a href={`tel:${phone}`} className="underline">
               {phone}
@@ -36,7 +38,7 @@ export default function ContactInfo({
         />
       )}
       {address && (
-        <LabelValue label="Adresse:" value={address} className="py-2" />
+        <LabelValue label={t('contactAddressLabel') + ':'} value={address} className="py-2" />
       )}
     </>
   );
